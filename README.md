@@ -1,4 +1,2 @@
-#to run:
-npm i 
-
-npm start
+# animation-cards-task
+ 
