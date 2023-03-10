@@ -11,13 +11,7 @@
   position: relative;
   box-sizing: border-box;
 }
-.heartShapeBackground {
-  position: absolute;
-  z-index: 0;
-  top: 7%;
-  height: 111%;
-  left: -15%;
-}
+
 .servicesContainer {
   display: flex;
   gap: 10px;
@@ -112,30 +106,30 @@
   transition: background-color 1s;
 }
 
-/* homeCareCardStyles */
-.homeCareCardStyles > .cardIconDiv {
+/* firstCardStyles */
+.firstCardStyles > .cardIconDiv {
   background: rgba(83, 144, 255, 0.2);
 }
-.homeCareCardStyles {
+.firstCardStyles {
   border-radius: 60px;
   order: 0;
   flex-grow: 0.3;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  border-bottom: 10px solid #5390ff;
+  border-bottom: 10px solid #7d5e91;
 }
 
-.homeCareCardStyles:hover {
-  /* background: #5390ff; */
+.firstCardStyles:hover {
+  /* background: #7d5e91; */
   border-bottom: 10px solid #ffffff;
   transition: border-bottom 1s ease-in-out;
 }
 
-.homeCareCardStyles:hover::before {
+.firstCardStyles:hover::before {
   content: "";
   position: absolute;
-  background-color: #5390ff !important;
+  background-color: #7d5e91 !important;
   z-index: -1;
   top: 10%;
   left: 10%;
@@ -161,23 +155,23 @@
 }
 /* primaryCareCard */
 
-.primaryCareCardStyles > .cardIconDiv {
+.secondCardStyles > .cardIconDiv {
   background: rgba(107, 198, 181, 0.2);
 }
-.primaryCareCardStyles {
-  border-bottom: 10px solid #6bc6b5;
+.secondCardStyles {
+  border-bottom: 10px solid #585859;
 }
 
-.primaryCareCardStyles:hover {
+.secondCardStyles:hover {
   border-bottom: 10px solid #ffffff;
 }
-.primaryCareCardStyles:hover::before {
+.secondCardStyles:hover::before {
   border-bottom: 10px solid #ffffff;
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #6bc6b5 !important;
+  background-color: #585859 !important;
   left: 0%;
   animation: rotateingFilling 0.65s ease-in-out forwards;
   z-index: -1;
@@ -198,31 +192,31 @@
   }
 }
 
-/* hospitalCareCardStyles */
-.cardDiv.hospitalCareCardStyles:hover .cartTitle {
+/* thirdCardStyles */
+.cardDiv.thirdCardStyles:hover .cartTitle {
   color: #ffffff;
   transition: color 1.5s ease-in-out !important;
 }
-.hospitalCareCardStyles > .cardIconDiv {
+.thirdCardStyles > .cardIconDiv {
   background: rgba(210, 141, 185, 0.2);
 }
 
-.cardDiv.hospitalCareCardStyles:hover .cardP {
+.cardDiv.thirdCardStyles:hover .cardP {
   color: #ffffff;
   transition: color 1.5s ease-in-out !important;
 }
 
-.hospitalCareCardStyles {
+.thirdCardStyles {
   background: #ffffff;
-  border-bottom: 10px solid #d28db9;
+  border-bottom: 10px solid #95cf52;
 }
 
-.hospitalCareCardStyles:hover {
-  background: #d28db9;
+.thirdCardStyles:hover {
+  background: #95cf52;
   border-bottom: 10px solid #ffffff;
 }
 
-.hospitalCareCardStyles:hover::after {
+.thirdCardStyles:hover::after {
   content: "";
   position: absolute;
   bottom: -50%;
